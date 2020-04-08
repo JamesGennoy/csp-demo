@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "app": "cd app && npm start",
+    "evil-server": "cd evil-server && npm start",
     "server": "cd server && npm start",
-    "start": "concurrently \"npm run app\" \"npm run server\""
+    "start": "concurrently \"npm run app\" \"npm run evil-server\" \"npm run server\""
   },
   "keywords": [],
   "author": "",

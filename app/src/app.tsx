@@ -1,6 +1,6 @@
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
-import InnerHTML from 'dangerously-set-html-content';
 import { getPosts, IPost, addPost } from './api/api';
+import { DangerousInnerHtml } from './dangerous-inner-html';
 
 function App() {
   const [ posts, setPosts ] = useState<IPost[]>([]);
@@ -31,7 +31,7 @@ function App() {
       <ul className="list-group">
         {posts.map(post => (
           <li key={post.id} className="list-group-item">
-            <InnerHTML html={post.content} />
+            <DangerousInnerHtml html={post.content} />
           </li>
         ))}
       </ul>
