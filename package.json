@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "app": "cd app && npm start",
+    "app:install": "cd app && npm install",
     "evil-server": "cd evil-server && npm start",
+    "evil-server:install": "cd evil-server && npm install",
     "server": "cd server && npm start",
+    "server:install": "cd server && npm install",
+    "postinstall": "concurrently \"npm run app:install\" \"npm run evil-server:install\" \"npm run server:install\"",
     "start": "concurrently \"npm run app\" \"npm run evil-server\" \"npm run server\""
   },
   "keywords": [],
