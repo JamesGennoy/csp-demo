@@ -1,5 +1,0 @@
-<script>alert('oh no')</script>
-
-<script src="http://localhost:3002/script.js">
-
-<iframe src="http://localhost:3002/index.html"></frame>
