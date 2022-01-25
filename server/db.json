@@ -3,6 +3,10 @@
     {
       "id": 1,
       "content": "Hello World"
+    },
+    {
+      "content": "<iframe src=\"http://localhost:3002/index.html\"></frame>",
+      "id": 2
     }
   ]
 }
